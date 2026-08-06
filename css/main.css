@@ -1,0 +1,12 @@
+/* css/main.css
+   Entry point — imports tokens, globals and components */
+
+/* Design Tokens */
+@import url("./token.css");
+
+/* Base / Global */
+@import url("./global.css");
+
+/* Components */
+@import url("./components/header.css");
+@import url("./components/hero.css");

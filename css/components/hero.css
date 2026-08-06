@@ -1,0 +1,170 @@
+/* css/components/hero.css
+   Hero section and profile card */
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--space-2xl);
+}
+
+/* ===== Hero Text ===== */
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+}
+
+.hero-text p,
+.hero-text h1,
+.hero-text h2 {
+  margin: 0;
+}
+
+.divider {
+  height: 3px;
+  border-radius: var(--radius-sm);
+}
+
+.hero-text .divider {
+  width: var(--size-divider-width);
+  background-color: var(--color-primary);
+}
+
+.card .divider {
+  width: var(--size-card-divider-width);
+  background-color: var(--color-gray-light);
+}
+
+.eyebrow,
+.role {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-primary);
+}
+
+.name {
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-black);
+}
+
+.name span {
+  color: var(--color-primary);
+}
+
+.description {
+  max-width: var(--size-description-max-width);
+
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-gray);
+
+  line-height: var(--line-height-base);
+}
+
+/* ===== Actions ===== */
+.actions {
+  display: flex;
+  gap: var(--space-sm);
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-xs);
+
+  width: var(--size-button-width);
+  height: var(--size-button-height);
+
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-semibold);
+
+  color: var(--color-white);
+  background: var(--color-primary);
+
+  text-decoration: none;
+
+  border-radius: var(--radius-md);
+
+  box-shadow: var(--shadow-default);
+
+  cursor: pointer;
+}
+
+.button .icon {
+  font-size: var(--icon-size-lg);
+}
+
+/* ===== Profile Card ===== */
+.card {
+  flex-shrink: 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  width: var(--size-card-width);
+  height: var(--size-card-height);
+
+  gap: var(--space-xl);
+
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-default);
+}
+
+/* Avatar */
+.avatar {
+  display: flex;
+  justify-content: center;
+}
+
+.avatar .icon {
+  font-size: var(--icon-size-xl);
+}
+
+/* ===== Contact ===== */
+.contact {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+  gap: var(--space-xs);
+}
+
+.contact li {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-medium);
+}
+
+/* ===== Mobile ===== */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-text {
+    align-items: center;
+  }
+
+  .description {
+    max-width: 100%;
+  }
+
+  .actions {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 320px;
+  }
+}

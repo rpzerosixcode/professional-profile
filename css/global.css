@@ -1,0 +1,25 @@
+/* css/global.css
+   Base and global styles */
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: var(--font-family-base);
+}
+
+body {
+  margin: 0;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2xl);
+}
+
+.icon {
+  font-size: var(--icon-size-sm);
+}

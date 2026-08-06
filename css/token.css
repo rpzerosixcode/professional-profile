@@ -1,0 +1,59 @@
+/* css/token.css
+   Design Tokens — centralized global values */
+
+:root {
+  /* ===== Colors ===== */
+  --color-primary: #2563EB;
+  --color-black: #111827;
+  --color-white: #FFFFFF;
+  --color-gray: #6B7280;
+  --color-gray-light: #C9C9C9;
+
+  /* ===== Typography ===== */
+  --font-family-base: "Geist", sans-serif;
+
+  --font-size-sm: 14px;
+  --font-size-md: 16px;
+  --font-size-lg: 28px;
+  --font-size-xl: 48px;
+
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  --letter-spacing-sm: 0.1em;
+  --letter-spacing-md: 0.15em;
+
+  --line-height-base: 1.5;
+
+  /* ===== Spacing ===== */
+  --space-xs: 14px;
+  --space-sm: 1rem;
+  --space-md: 1.2rem;
+  --space-lg: 25px;
+  --space-xl: 2.5rem;
+  --space-2xl: 4rem;
+
+  /* ===== Sizing ===== */
+  --size-header-height: 80px;
+  --size-divider-width: 50px;
+  --size-card-divider-width: 250px;
+  --size-description-max-width: 500px;
+  --size-button-width: 180px;
+  --size-button-height: 60px;
+  --size-card-width: 372px;
+  --size-card-height: 425px;
+
+  /* ===== Radii ===== */
+  --radius-sm: 2px;
+  --radius-md: 10px;
+
+  /* ===== Effects ===== */
+  --shadow-default: 0 4px 14px 0 rgba(0, 0, 0, 0.08);
+
+  /* ===== Icons ===== */
+  --icon-size-sm: 16px;
+  --icon-size-md: 24px;
+  --icon-size-lg: 32px;
+  --icon-size-xl: 80px;
+}

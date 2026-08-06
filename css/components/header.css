@@ -1,0 +1,24 @@
+/* css/components/header.css
+   Header and logo */
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  height: var(--size-header-height);
+
+  box-shadow: var(--shadow-default);
+}
+
+.logo {
+  margin: 0;
+
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-bold);
+}
+
+.logo span {
+  color: var(--color-primary);
+}
