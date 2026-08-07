@@ -1,0 +1,55 @@
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  min-height: 80px;
+  width: 100%;
+  max-width: 1280px;
+
+  margin-inline: auto;
+
+  padding: 1rem 2rem;
+
+  background: var(--color-black);
+  gap: 1rem;
+
+  border-radius: 10px;
+
+  flex-shrink: 0;
+}
+
+.quote {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 40px;
+  height: 40px;
+
+  flex-shrink: 0;
+
+  border-radius: 50%;
+
+  background-color: var(--color-primary);
+  color: var(--color-white);
+
+  font-size: 18px;
+}
+.footer .divider {
+  width: 2px;
+  height: 40px;
+
+  background-color: var(--color-gray-light);
+  border-radius: 2px;
+}
+
+.footer p {
+  max-width: 400px;
+
+  margin: 0;
+
+  font-size: var(--font-size-sm);
+  color: var(--color-gray);
+  line-height: var(--line-height-base);
+}

@@ -1,5 +1,4 @@
-/* css/components/header.css
-   Header and logo */
+/* Header and logo */
 
 .header {
   display: flex;
@@ -7,7 +6,7 @@
   justify-content: center;
 
   width: 100%;
-  height: var(--size-header-height);
+  height: 100px;
 
   box-shadow: var(--shadow-default);
 }

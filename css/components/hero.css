@@ -70,13 +70,16 @@
 }
 
 .button {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: var(--space-xs);
 
-  width: var(--size-button-width);
-  height: var(--size-button-height);
+  gap: 14px;
+
+  min-width: 180px;
+  min-height: 60px;
+
+  padding-inline: 1.5rem;
 
   font-size: var(--font-size-md);
   font-weight: var(--font-weight-semibold);
@@ -86,11 +89,13 @@
 
   text-decoration: none;
 
-  border-radius: var(--radius-md);
+  border-radius: 10px;
 
-  box-shadow: var(--shadow-default);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
 
   cursor: pointer;
+
+  white-space: nowrap;
 }
 
 .button .icon {
