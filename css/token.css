@@ -4,18 +4,20 @@
 :root {
   /* ===== Colors ===== */
   --color-primary: #2563EB;
+  --color-primary-dark: #1D4ED8;
   --color-black: #111827;
   --color-white: #FFFFFF;
   --color-gray: #6B7280;
   --color-gray-light: #C9C9C9;
+  --color-surface: #FAFAFA;
 
   /* ===== Typography ===== */
-  --font-family-base: "Geist", sans-serif;
+  --font-family-base: "Inter", "Geist", system-ui, -apple-system, "Segoe UI", sans-serif;
 
   --font-size-sm: 14px;
   --font-size-md: 16px;
-  --font-size-lg: 28px;
-  --font-size-xl: 48px;
+  --font-size-lg: clamp(22px, 2.4vw + 12px, 28px);
+  --font-size-xl: clamp(32px, 5vw + 12px, 48px);
 
   --font-weight-medium: 500;
   --font-weight-semibold: 600;
@@ -32,7 +34,7 @@
   --space-md: 1.2rem;
   --space-lg: 25px;
   --space-xl: 2.5rem;
-  --space-2xl: 4rem;
+  --space-2xl: clamp(2rem, 4vw, 4rem);
 
   /* ===== Sizing ===== */
   --size-header-height: 80px;
@@ -43,13 +45,18 @@
   --size-button-height: 60px;
   --size-card-width: 372px;
   --size-card-height: 425px;
+  --size-page-max-width: 1280px;
 
   /* ===== Radii ===== */
   --radius-sm: 2px;
   --radius-md: 10px;
+  --radius-round: 50%;
 
   /* ===== Effects ===== */
   --shadow-default: 0 4px 14px 0 rgba(0, 0, 0, 0.08);
+  --shadow-hover: 0 8px 20px 0 rgba(37, 99, 235, 0.25);
+  --transition-base: 0.2s ease;
+  --focus-ring: 0 0 0 3px rgba(37, 99, 235, 0.35);
 
   /* ===== Icons ===== */
   --icon-size-sm: 16px;

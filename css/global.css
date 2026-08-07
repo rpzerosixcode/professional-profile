@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 html,
 body {
   font-family: var(--font-family-base);
@@ -12,24 +16,87 @@ body {
 
 body {
   margin: 0;
+  color: var(--color-black);
+  background-color: var(--color-white);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+img {
+  max-width: 100%;
+  display: block;
 }
 
 .page {
   display: flex;
   flex-direction: column;
 
-  gap: 4rem;
+  gap: var(--space-2xl);
 
   width: 100%;
+  max-width: var(--size-page-max-width);
 
   margin-inline: auto;
 
-  padding-inline: 2rem;
+  padding-inline: clamp(1rem, 4vw, 2rem);
   padding-block: 2rem;
 
-  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .icon {
   font-size: var(--icon-size-sm);
+}
+
+/* ===== Shared divider ===== */
+.divider {
+  height: 3px;
+  border-radius: var(--radius-sm);
+  margin: 0;
+}
+
+/* ===== Accessibility helpers ===== */
+.skip-link {
+  position: absolute;
+  top: -100px;
+  left: 1rem;
+  z-index: 100;
+
+  padding: 0.75rem 1.25rem;
+
+  background: var(--color-primary);
+  color: var(--color-white);
+  text-decoration: none;
+  border-radius: var(--radius-md);
+
+  transition: top var(--transition-base);
+}
+
+.skip-link:focus {
+  top: 1rem;
+}
+
+a {
+  color: inherit;
+}
+
+a:focus-visible,
+button:focus-visible,
+[role="progressbar"]:focus-visible {
+  outline: none;
+  box-shadow: var(--focus-ring);
+  border-radius: var(--radius-sm);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }
