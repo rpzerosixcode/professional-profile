@@ -9,6 +9,7 @@
   min-height: var(--size-header-height);
 
   padding-inline: 1rem;
+  border-radius: var(--radius-md);
 
   box-shadow: var(--shadow-default);
 }

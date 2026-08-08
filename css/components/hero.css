@@ -100,6 +100,20 @@
   transition: background-color var(--transition-base), box-shadow var(--transition-base), transform var(--transition-base);
 }
 
+.button:first-child {
+  min-width: calc(var(--size-button-width) - 80px);
+  min-height: var(--size-button-height);
+
+  background: none;
+  color: var(--color-black);
+}
+
+.button:first-child:hover,
+.button:first-child:focus-visible {
+  background: var(--color-primary);
+  color: var(--color-white);
+}
+
 .button:hover,
 .button:focus-visible {
   background: var(--color-primary-dark);
