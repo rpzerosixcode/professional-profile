@@ -9,6 +9,7 @@
 }
 
 /* ===== Hero Text ===== */
+
 .hero-text {
   display: flex;
   flex-direction: column;
@@ -63,6 +64,7 @@
 }
 
 /* ===== Actions ===== */
+
 .actions {
   display: flex;
   flex-wrap: wrap;
@@ -97,7 +99,10 @@
 
   white-space: nowrap;
 
-  transition: background-color var(--transition-base), box-shadow var(--transition-base), transform var(--transition-base);
+  transition:
+    background-color var(--transition-base),
+    box-shadow var(--transition-base),
+    transform var(--transition-base);
 }
 
 .button:first-child {
@@ -106,6 +111,10 @@
 
   background: none;
   color: var(--color-black);
+}
+
+.button:first-child p {
+  display: none;
 }
 
 .button:first-child:hover,
@@ -129,6 +138,7 @@
 }
 
 /* ===== Profile Card ===== */
+
 .card {
   flex-shrink: 0;
 
@@ -150,6 +160,7 @@
 }
 
 /* Avatar */
+
 .avatar {
   display: flex;
   justify-content: center;
@@ -160,6 +171,7 @@
 }
 
 /* ===== Contact ===== */
+
 .contact {
   display: flex;
   flex-direction: column;
@@ -191,6 +203,7 @@
 }
 
 /* ===== Responsive ===== */
+
 @media (max-width: 900px) {
   .hero {
     flex-direction: column;
@@ -217,5 +230,9 @@
 @media (max-width: 420px) {
   .actions .button {
     width: 100%;
+  }
+
+  .button:first-child p {
+    display: block;
   }
 }
